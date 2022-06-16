@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220616 21:21:52.694" rpa="false" schemaversion="3">
+<suite id="s1" name="Checkbox" source="C:\Users\Acer\Documents\DemoRobotRF\checkbox.robot">
+<test id="s1-t1" name="I click &quot;notes&quot; in the checkbox" line="11">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${base_url}</arg>
+<arg>${browser_type}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220616 21:21:53.981" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<status status="PASS" starttime="20220616 21:21:53.959" endtime="20220616 21:22:04.654"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220616 21:22:04.670" endtime="20220616 21:22:05.014"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//button[@aria-label="Toggle"])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 21:22:05.016" level="INFO">Clicking element '(//button[@aria-label="Toggle"])[1]'.</msg>
+<status status="PASS" starttime="20220616 21:22:05.015" endtime="20220616 21:22:05.260"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//button[@aria-label="Toggle"])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 21:22:05.262" level="INFO">Clicking element '(//button[@aria-label="Toggle"])[2]'.</msg>
+<status status="PASS" starttime="20220616 21:22:05.261" endtime="20220616 21:22:05.957"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[@for="tree-node-notes"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220616 21:22:05.959" level="INFO">Clicking element '//label[@for="tree-node-notes"]'.</msg>
+<status status="PASS" starttime="20220616 21:22:05.958" endtime="20220616 21:22:06.136"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//div[@id="result"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220616 21:22:06.214" level="INFO">Element '//div[@id="result"]' is displayed.</msg>
+<status status="PASS" starttime="20220616 21:22:06.140" endtime="20220616 21:22:06.214"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>//span[@class="text-success"]</arg>
+<arg>notes</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220616 21:22:06.309" level="INFO">Element '//span[@class="text-success"]' contains text 'notes'.</msg>
+<status status="PASS" starttime="20220616 21:22:06.216" endtime="20220616 21:22:06.309"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220616 21:22:06.311" endtime="20220616 21:22:09.413"/>
+</kw>
+<status status="PASS" starttime="20220616 21:21:53.745" endtime="20220616 21:22:09.429"/>
+</test>
+<status status="PASS" starttime="20220616 21:21:52.701" endtime="20220616 21:22:09.445"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Checkbox">Checkbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
